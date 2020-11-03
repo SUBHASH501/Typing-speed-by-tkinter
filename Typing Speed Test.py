@@ -37,7 +37,7 @@ def beginner():
     #creating the function sliding the title
     def labelSlider():
         global count,sliderWords
-        text = 'Welcome To Typing Speed Game In Beginner Level' #initiasing the text variable with  project name
+        text = 'Welcome To Typing Speed Game ' #initiasing the text variable with  project name
         if(count>=len(text)): #checking condition
             
             count = 0
@@ -108,7 +108,7 @@ def beginner():
              print(correct_count)   #printing the total length of correct input by user    
              t = str(round(t1-t0))  #total time taken by user
                
-              configuring  label with total Score,WPM,Accurancy
+             #configuring  label with total Score,WPM,Accurancy
              gamePlayDetailLabel.configure(text = 'Total Score = {} | WPM={} | Accuracy={}'.format(score-miss,int((count*60)/int(5*(t1-t0))),int((correct_count*100)/count)))
              rr = messagebox.askretrycancel('Notification','Hit Retry to Play Again')  #asking for retry or cancle 
              if rr == True: #if user has selected retry then set all variable as earlier 
