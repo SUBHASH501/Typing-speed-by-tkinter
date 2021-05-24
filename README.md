@@ -1,1 +1,1 @@
-# Typing-speend-by-tkinter
+# Typing-speed-by-tkinter
